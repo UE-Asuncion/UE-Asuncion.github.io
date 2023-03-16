@@ -27,8 +27,39 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
-
-.gallery > a > img {
+.link-img-container {
+    position: relative;
+    text-decoration: none;
+    padding: 0;
     width: auto;
     height: 200px;
+    background-color: rgba(1,1,1,0);
+    border-radius: 20px;
 }
+.link-img-container:hover > .overlay {
+    opacity: 1;
+}
+.link-img-container > img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+.overlay {
+    position: absolute;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 5px 0;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    opacity: 0;
+}
+/* a > div > p{
+    width: inherit;
+    z-index: 10;
+    background-color: #030303;
+} */
