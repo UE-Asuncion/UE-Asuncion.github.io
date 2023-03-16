@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
 }
 ul {
     list-style: circle;
@@ -9,7 +9,7 @@ ul > ul {
     list-style: disc;
 }
 h1{
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
 }
 .header {
     margin: 0 0 2em;

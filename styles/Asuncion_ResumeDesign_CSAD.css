@@ -1,16 +1,13 @@
 body {
     margin: auto;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
+    padding-bottom: 50px;
 }
 ul {
     padding-left: 1.5em;
-    list-style-image: url('imgs/arrow.png');
-}
-ul > ul {
-    list-style-image: url('imgs/arrow2.png');
 }
 .header {
-    margin: 0 0 3em;
+    margin: 0 0 6em;
     padding: 3em 2em 2em;
     background-color: #1B262C;
     color: white;
@@ -22,12 +19,23 @@ ul > ul {
 }
 .header > .head-content > * {
     font-weight: 500;
-    margin: 0px;
+    margin: 0;
+}
+img {
+    float: right;
+    margin-right: 50px;
+    width: auto;
+    height: 200px;
+    border-radius: 200px;
+    border: 10px solid #1B262C;
 }
 .content {
     width: 70%;
+    padding: 3em;
     margin: auto;
-    color: #505050;
+    color: #1f1f1f;
+    background-color: #f9f9f9;
+    border-radius: 20px;
 }
 .content > .profile {
     margin: 0;
@@ -42,17 +50,18 @@ ul > ul {
 .content div {
     margin: 3em 0;
 }
-.content > .column {
-    margin: 0 1em 3em;
-    float: left;
+.content > .grid-section {
+    display: grid;
+    grid-template-columns: 35% 100%;
+    margin: 0 0 .5em;
 }
-.content > .left {
-    width: 30%;
+.grid-section > .column {
+    margin: 0 1em 0;
 }
-.content > .left > * > h1 {
+.grid-section > .left > * > h1 {
     font-size: 1.3em;
 }
-.content > .right {
+.grid-section > .right {
     width: 55%;
     margin-right: 0;
     padding-left:2em;
@@ -60,22 +69,22 @@ ul > ul {
     border-left: 1.5px solid #1B262C;
 }
 
-.content  * > h1 {
+.grid-section  * > h1 {
     font-size: 1.7em;
     color: #1B262C;
     letter-spacing: 2px;
     font-weight: lighter;
     margin-bottom: 0;
 }
-.content * > h2 {
+.grid-section * > h2 {
     font-size: 1.3em;
     margin-bottom: 3px;
     font-weight: lighter;
 }
-.content * > p {
+.grid-section * > p {
     margin-top: 3px;
 }
-.content * > .subtitle {
+.grid-section * > .subtitle {
     font-size: .8em;
 }
 

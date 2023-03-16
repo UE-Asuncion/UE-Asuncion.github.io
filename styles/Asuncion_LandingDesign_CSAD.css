@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
 }
 ul {
     list-style: circle;
@@ -8,21 +8,28 @@ ul {
 ul > ul {
     list-style: disc;
 }
-h1{
-    font-family: Georgia, 'Times New Roman', serif;
+.header > img {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 31.5em;
+    width: auto;
+    height: 250px;
+    opacity: 30%;
 }
 .header {
+    font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
+    font-size: 2em;
     margin: 0 0 2em;
     padding: 1.5em 2em 2em;
     background-color: #1B262C;
     color: white;
-}
-.header > h1 {
-    text-align: center;
+    text-align: left;
+    height: 150px;
 }
 .content {
     text-align: center;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 .content > .grid {
@@ -47,7 +54,7 @@ a {
     color: #1B262C;
     font-weight: bold;
     text-decoration: none;
-    font-size: .9em;
+    font-size: 1em;
     margin-left: 2em;
     margin-right: 2em;
     border-radius: 20px;
