@@ -12,6 +12,7 @@ h1{
     font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
 }
 .header {
+    width:auto;
     margin: 0 0 2em;
     padding: 1.5em 2em 2em;
     background-color: #1B262C;

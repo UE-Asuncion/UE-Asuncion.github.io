@@ -9,17 +9,18 @@ ul > ul {
     list-style: disc;
 }
 .header > img {
-    display: inline;
     position: absolute;
     top: 0;
-    left: 31.5em;
+    right: 0;
     width: auto;
     height: 250px;
     opacity: 30%;
 }
 .header {
+    position: relative;
     font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
     font-size: 2em;
+    width: auto;
     margin: 0 0 2em;
     padding: 1.5em 2em 2em;
     background-color: #1B262C;
