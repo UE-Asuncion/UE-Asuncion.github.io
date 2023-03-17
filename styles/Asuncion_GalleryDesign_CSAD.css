@@ -24,6 +24,7 @@ h1{
 
 .gallery {
     width: 80%;
+    overflow: auto;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -31,6 +32,7 @@ h1{
 .gallery > * {
     text-align: center;
     width: 100%;
+    margin-bottom: 5px;
 }
 .link-img-container {
     position: relative;
@@ -63,4 +65,13 @@ h1{
 }
 .link-img-container:hover > .overlay {
     opacity: 1;
+}
+.link-img-container:hover > img {
+    opacity: .8;
+}
+
+hr {
+    width: 70%;
+    border: 1.5px solid #1B262C;
+    border-radius: 100px;
 }

@@ -17,22 +17,26 @@ ul {
     padding-left: 7em;
     text-align: left;
 }
+.head-content > p{
+    font-size: .7em;
+}
 .header > .head-content > * {
+    display: inline-block;
     font-weight: 500;
     margin: 0;
 }
 img {
     float: right;
-    margin-right: 50px;
+    right: 50px;
     width: auto;
     height: 200px;
     border-radius: 200px;
     border: 10px solid #1B262C;
 }
 .content {
-    width: 70%;
-    padding: 3em;
+    width: 80%;
     margin: auto;
+    padding: 3em;
     color: #1f1f1f;
     background-color: #f9f9f9;
     border-radius: 20px;
@@ -51,18 +55,21 @@ img {
     margin: 3em 0;
 }
 .content > .grid-section {
+    position: relative;
     display: grid;
-    grid-template-columns: 35% 100%;
+    grid-template-columns: 35% 65%;
     margin: 0 0 .5em;
 }
 .grid-section > .column {
     margin: 0 1em 0;
 }
+.grid-section > .column > *{
+    overflow: auto;
+}
 .grid-section > .left > * > h1 {
     font-size: 1.3em;
 }
 .grid-section > .right {
-    width: 55%;
     margin-right: 0;
     padding-left:2em;
     padding-right:0;
