@@ -7,6 +7,7 @@ h1{
 }
 .header {
     position: sticky;
+    top: 0;
     width:auto;
     margin: 0 0 1em;
     padding: 1.5em 2em 2em;
@@ -17,12 +18,14 @@ h1{
     margin: 0;
     text-align: center;
 }
+
 .side-bar {
     display: inline-block;
+    top: 20%;
     position: sticky;
     width: 100px;
     padding: 5px;
-    margin-bottom: 0;
+    margin-bottom: -50px;
     background-color: #1B262C;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -66,7 +69,7 @@ h1{
     padding: 0;
     width: auto;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .link-img-container > img {
     width: inherit;
@@ -74,7 +77,7 @@ h1{
     border-radius: inherit;
     background-color: #656565;
 }
-.overlay {
+.link-img-container > .overlay {
     position: absolute;
     border-radius: inherit;
     border-top-right-radius: 0;
