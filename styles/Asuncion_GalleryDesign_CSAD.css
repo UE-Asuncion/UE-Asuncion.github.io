@@ -2,24 +2,50 @@ body {
     margin: auto;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
 }
-ul {
-    list-style: circle;
-}
-ul > ul {
-    list-style: disc;
-}
 h1{
     font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
 }
 .header {
+    position: sticky;
     width:auto;
-    margin: 0 0 2em;
+    margin: 0 0 1em;
     padding: 1.5em 2em 2em;
     background-color: #1B262C;
     color: white;
 }
 .header > h1 {
+    margin: 0;
     text-align: center;
+}
+.side-bar {
+    display: inline-block;
+    position: sticky;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 0;
+    background-color: #1B262C;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.side-bar > ul{
+    position: relative;
+    margin-left: 0;
+    padding-left: 0;
+}
+.side-bar > ul > li{
+    margin-left: inherit;
+    padding-left: inherit;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.side-bar > ul > li:hover{
+    background-color: #131b1f;
+    border-radius: 5px;
+}
+.side-bar > ul > li > a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .gallery {
