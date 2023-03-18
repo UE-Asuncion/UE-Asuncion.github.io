@@ -70,8 +70,36 @@ h1{
     opacity: .8;
 }
 
-hr {
-    width: 70%;
-    border: 1.5px solid #1B262C;
+
+.separation {
+    position: relative;
     border-radius: 100px;
+    width: 70%;
+    height: 10px;
+    margin: auto;
+}
+.separation > hr {
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    width:100%;
+    border: 1.5px solid #1B262C;
+    border-radius: inherit;
+
+}
+.separation > div.bg-circle {
+    position: relative;
+    width: 100px;
+    height: 10px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+.separation > div.bg-circle >  div.circle {
+    position: relative;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 200px;
+    background-color: #1B262C;
 }
