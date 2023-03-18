@@ -12,10 +12,11 @@ div.header > a.home > img {
     width: auto;
     height: 40px;
     border-radius: 100px;
-    
+    transition: .3s ease;
 }
 div.header > a.home > img:hover {
     background-color: #cbcbcb36;
+    transition: .3s ease-in;
 }
 .navigation {
     font-size:15px;

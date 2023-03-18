@@ -59,6 +59,7 @@ a {
     margin-left: 2em;
     margin-right: 2em;
     border-radius: 20px;
+    transition: .3s ease-out;
 }
 a > * {
     margin: 0;
@@ -73,10 +74,13 @@ a > .button > hr {
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    transition: .3s ease-in;
 }
 a:hover {
     background-color: #cbcbcb36;
+    transition: .3s ease-in;
 }
 a:hover > .button > hr {
     width:50%;
+    transition: .3s ease-out;
 }
