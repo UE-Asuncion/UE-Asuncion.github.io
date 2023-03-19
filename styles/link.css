@@ -12,34 +12,48 @@ div.header > a.home:hover > img{
     background-color: #cbcbcb36;
     transition: .3s ease-in;
 }
-.navigation {
-    font-size:15px;
-    text-align: center;
-    color: #1B262C;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .goto {
     position: relative;
     text-align: center;
     margin-bottom: 30px;
-    color: #1B262C;
 }
 .navigation{
+    color: #1B262C;
+    font-size:15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
     margin: 0 5px;
     padding: 5px 10px;
-    width: 150px;
-    height: 95px;
     border: 1.5px solid #1B262C;
     border-radius: 30px;
-    /* text-decoration: underline; */
 }
 .navigation:hover {
     background-color: #1B262C;
     color: white;
     transition: .3s ease;
 }
+.navigation.top {
+    display: inline-block;
+    position: relative;
+    padding: 5px 7px 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+.navigation.top:hover {
+    color: #1B262C;
+    background-color: #cbcbcb36;
+    transition: .3s ease;
+}
+.navigation.top > img {
+    position: relative;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin: auto 3px 0 auto;
+}
+
 
 .img-container {
     width: 70%;
