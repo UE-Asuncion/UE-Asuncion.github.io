@@ -1,20 +1,14 @@
 div.header > a.home {
     float: left;
     margin-left: 2em;
-    /* color: white;
-    font-size: 16px;
-    text-decoration: none; */
 }
-/* div.header > a.home:hover {
-    text-decoration: underline;
-} */
 div.header > a.home > img {
     width: auto;
     height: 40px;
     border-radius: 100px;
     transition: .3s ease;
 }
-div.header > a.home > img:hover {
+div.header > a.home:hover > img{
     background-color: #cbcbcb36;
     transition: .3s ease-in;
 }
@@ -26,12 +20,25 @@ div.header > a.home > img:hover {
     font-weight: bold;
 }
 
-.navigation:hover {
-    text-decoration: underline;
-}
-
 .goto {
+    position: relative;
     text-align: center;
+    margin-bottom: 30px;
+    color: #1B262C;
+}
+.navigation{
+    margin: 0 5px;
+    padding: 5px 10px;
+    width: 150px;
+    height: 95px;
+    border: 1.5px solid #1B262C;
+    border-radius: 30px;
+    /* text-decoration: underline; */
+}
+.navigation:hover {
+    background-color: #1B262C;
+    color: white;
+    transition: .3s ease;
 }
 
 .img-container {
