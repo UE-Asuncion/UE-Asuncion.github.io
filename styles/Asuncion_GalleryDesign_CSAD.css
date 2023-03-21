@@ -72,9 +72,9 @@ h1{
     overflow-y: hidden;
     margin: auto;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
     grid-auto-rows: 200px;
-    gap: 3px;
+    gap: 5px;
 }
 /* .gallery::before {
     content: '';
