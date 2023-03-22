@@ -28,36 +28,26 @@ ul > ul {
     text-align: left;
     height: 150px;
 }
-.content {
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     width: 80%;
+    overflow-y: hidden;
+    overflow-x: auto;
     margin: auto;
+    /* grid-template-columns: auto auto auto; */
+    gap: 10px;
 }
-.content > .grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-/* .content > a {
-    padding: 10px 15px;
-    text-align: center;
-    color: #1B262C;
-    border: 2px solid #1B262C;
-    border-radius: 2px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.content > a:hover {
-    font-size: 1.1em;
-} */
-
 a {
+    width: 150px;
     text-align: center;
     color: #1B262C;
     font-weight: bold;
     text-decoration: none;
     font-size: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 2em 2em;
     border-radius: 20px;
     transition: .3s ease-out;
 }
