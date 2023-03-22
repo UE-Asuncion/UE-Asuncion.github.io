@@ -47,7 +47,7 @@ h1{
     display: inline-block;
     width: auto;
     height: 400px;
-    margin: auto;
+    margin: 16px auto auto;
     object-fit: cover;
 }
 
@@ -73,6 +73,7 @@ h1{
     padding-left: 15%;
 }
 .section > .clips > div > video{
+    overflow-y: hidden;
     display: inline-block;
     margin: auto;
     width: 70%;
