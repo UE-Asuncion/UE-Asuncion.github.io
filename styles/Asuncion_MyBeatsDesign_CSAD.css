@@ -61,7 +61,7 @@ h1{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    justify-content: left;
+    justify-content: center;
     gap: 30px;
     background-color: #dadada;
     border-radius: 20px;
