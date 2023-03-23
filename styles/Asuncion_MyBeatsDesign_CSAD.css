@@ -50,6 +50,9 @@ h1{
 .section > .genre > .info > *{
     margin: 0;
 }
+.section > .genre > .info > p{
+    font-size: 12px;
+}
 .section > .genre > .img > img{
     width: inherit;
     height: inherit;
@@ -74,7 +77,7 @@ h1{
     text-align: left;
 }
 .section > .sample > .content > h3, .section > .sample > .content > p{
-    margin: 0;
+    margin: 3px;
 }
 .section > .sample > .content > img{
     margin: auto;
