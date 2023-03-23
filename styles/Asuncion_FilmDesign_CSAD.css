@@ -88,10 +88,14 @@ h1{
     display: flex;
     flex-wrap: nowrap;
 } */
-
+.types {
+    display: flex;
+    font-size: 1.3em;
+    padding-left: 20px;
+}
 .film {
     position: relative;
-    background-image: url('../imgs/breaking-bad-cover.jpg');
+    background-image: url('../imgs/breaking-bad-cover_upscaled.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -101,18 +105,20 @@ h1{
     height: 100vh;
     max-height: 100%;
     background-color: #1B262C;
-
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
 }
 .film > .text {
     padding-top: 3em;
     padding-left: 5em;
     width: 55%;
     margin-bottom: 2em;
+    font-family: inherit;
 }
 .film > .text > *{
     font-weight: lighter;
     margin: 0 0 10px;
     text-align: left;
+    font-family: inherit;
 }
 .film > .text > h1 {
     margin-bottom: 0;
