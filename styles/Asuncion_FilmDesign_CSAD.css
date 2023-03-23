@@ -1,15 +1,17 @@
 body {
     margin: auto;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
+    /* background-color: #1B262C; */
 }
 h1{
     font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
 }
 .header {
-    margin: 0 0 1em;
+    position: relative;
     padding: 1em 0 2em;
     background-color: #1B262C;
     color: white;
+    height: fit-content;
 }
 .header > h1 {
     width: 30%;
@@ -17,7 +19,7 @@ h1{
     text-align: center;
 }
 
-.section {
+/* .section {
     position: relative;
     width: 90%;
     height: fit-content;
@@ -77,5 +79,46 @@ h1{
     display: inline-block;
     margin: auto;
     width: 70%;
+    height: auto;
+} */
+
+.header {
+    background-image: url('../imgs/breaking-bad-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    background-color: #1B262C;
+}
+.film > .text {
+    padding-top: 3em;
+    padding-left: 5em;
+    width: 55%;
+}
+.film > .text > *{
+    font-weight: lighter;
+    margin: 0 0 10px;
+    text-align: left;
+}
+.film > .text > h1 {
+    display: inline-block;
+    font-size: 5em;
+    font-weight: initial;
+}
+.film > .film-content > .cover > img{
+    display: block;
+    object-fit: fill;
+}
+
+.film > .clips {
+    width: 300px;
+    height: auto;
+}
+
+.film > .clips > video {
+    width: inherit;
     height: auto;
 }
