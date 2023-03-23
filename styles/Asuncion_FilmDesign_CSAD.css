@@ -12,10 +12,9 @@ h1{
     width: 100%;
     background-color: #1B262C;
     color: white;
-    height: fit-content;
+    height: 100%;
 }
 .header > h1 {
-    /* width: 30%; */
     padding-left: 3em;
     margin:auto;
     text-align: left;
@@ -89,13 +88,49 @@ h1{
     flex-wrap: nowrap;
 } */
 .types {
+    position: relative;
+    margin-top: 5px;
     display: flex;
     font-size: 1.3em;
     padding-left: 20px;
 }
-.film {
+.types > a {
     position: relative;
-    background-image: url('../imgs/breaking-bad-cover_upscaled.jpg');
+    /* font-weight: lighter; */
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.types > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: white;
+    height: 1.5px;
+    width: 0;
+}
+.types > a:hover::after{
+    width: 80%;
+    left: 0;
+    transition: .3s ease;
+}
+.types > .active::after{
+    width: 80%;
+    left: 0;
+}
+.film-container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: hidden;
+}
+.film {
+    display: inline;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -106,63 +141,86 @@ h1{
     max-height: 100%;
     background-color: #1B262C;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: 60vh 30vh;
+    overflow: hidden;
 }
-.film > .text {
-    padding-top: 3em;
+.film-container > .film:nth-child(1) {
+    background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/breaking-bad-cover-upscaled.jpeg'); 
+}
+.film-container > .film:nth-child(2) {
+    background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/Bleach-TYBW-upscaled.jpeg'); 
+}
+.film > .info {
     padding-left: 5em;
-    width: 55%;
-    margin-bottom: 2em;
+    width: 45%;
+    /* margin-bottom: 2em; */
+    height: fit-content;
     font-family: inherit;
 }
-.film > .text > *{
-    font-weight: lighter;
+.film > .info > a {
+    position: relative;
+    width: fit-content;
+    height: 180px;
+}
+.film > .info > a > img {
+    vertical-align: top;
+    object-fit: contain;
+    width: auto;
+    height: inherit;
+}
+.film > .info > *{
+    /* font-weight: lighter; */
     margin: 0 0 10px;
     text-align: left;
     font-family: inherit;
 }
-.film > .text > h1 {
+/* .film > .info > h1 {
     margin-bottom: 0;
-    display: inline-block;
     font-size: 5em;
     font-weight: initial;
-}
-.film > .text > h1 {
     margin: 0;
+} */
+.film > .info > p {
+    text-align: justify;
 }
 .film > .clips {
     position: relative;
+    padding-top: 10px;
     overflow-x: auto;
     width: 87%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
 }
 .film > .clips > video {
     width: 300px;
     height: auto;
 }
-.film > .next-button {
+
+.film > .next-button, .film > .prev-button {
     position: absolute;
-    right: 20px;
-    top: 40%;
-    margin: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 200px;
-    background-color: black;
+    padding: 10px;
+    top: 40%;
+}
+.film > .next-button {
+    right: 20px;
 }
 .film > .prev-button {
-    position: absolute;
     left: 20px;
-    top: 40%;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 200px;
-    background-color: black;
 }
 .film > .next-button:hover, .film > .prev-button:hover {
-    background-color: aliceblue;
+    background-color: #dddddd0d;
     transition: .3s ease;
+}
+.film > .next-button > img, .film > .prev-button > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    padding-left: 3px;
 }
