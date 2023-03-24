@@ -2,6 +2,10 @@ div.header > a.home {
     float: left;
     margin-left: 2em;
 }
+div.header > a.home::after {
+    content: "";
+    clear: left;
+}
 div.header > a.home > img {
     width: auto;
     height: 40px;
