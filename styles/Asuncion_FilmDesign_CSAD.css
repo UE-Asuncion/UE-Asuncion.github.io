@@ -147,7 +147,7 @@ h1{
     background-color: #1B262C;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
     display: grid;
-    grid-template-rows: 60% 50%;
+    grid-template-rows: 60% 40%;
     overflow: hidden;
 }
 .film-container > .film:nth-child(1) {
@@ -157,9 +157,13 @@ h1{
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/Bleach-TYBW-upscaled.jpeg'); 
 }
 .film-container > .film:nth-child(3) {
-    background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/breaking-bad-cover-upscaled.jpeg'); 
+    background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/soul-eater-cover.jpg');
+    background-position: center top 20%;
 }
-
+.film-container > .film:nth-child(3) > .info > a > img {
+    margin-top: 10px;
+    height: 50%;
+}
 .film > .info {
     padding-left: 5em;
     width: 45%;
@@ -179,30 +183,27 @@ h1{
     height: 70%;
 }
 .film > .info > *{
-    /* font-weight: lighter; */
     margin: 0 0 10px;
     text-align: left;
     font-family: inherit;
 }
 .film > .info > p {
-    /* font-size: 12px; */
     text-align: justify;
     height: 100px;
     overflow-y: auto;
 }
 .film > .clips {
     position: relative;
-    /* padding-top: 10px; */
     overflow-x: auto;
     width: 87%;
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
-    gap: 5px;
+    gap: 10px;
 }
 .film > .clips > video {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 140px;
 }
 
 .film > .next-button, .film > .prev-button {
