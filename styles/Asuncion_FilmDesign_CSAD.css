@@ -114,7 +114,7 @@ h1{
     margin-left: auto; 
     margin-right: auto; 
     background-color: white;
-    height: 1.5px;
+    height: 1.7px;
     width: 0;
 }
 .types > a:hover::after{
@@ -150,20 +150,32 @@ h1{
     grid-template-rows: 60% 40%;
     overflow: hidden;
 }
-.film-container > .film:nth-child(1) {
+.film-container.film1 > .film:nth-child(1) {
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/breaking-bad-cover-upscaled.jpeg'); 
 }
-.film-container > .film:nth-child(2) {
+.film-container.film1 > .film:nth-child(2) {
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/Bleach-TYBW-upscaled.jpeg'); 
 }
-.film-container > .film:nth-child(3) {
+.film-container.film1 > .film:nth-child(3) {
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/soul-eater-cover.jpg');
     background-position: center top 20%;
 }
-.film-container > .film:nth-child(3) > .info > a > img {
+.film-container.film1 > .film:nth-child(3) > .info > a > img {
     margin-top: 10px;
     height: 50%;
 }
+
+.film-container.film2 > .film:nth-child(1) {
+    background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/pirates-of-the-caribbean-title.png'); 
+}
+.film-container.film2 > .film:nth-child(1) > .info > a > img{
+    margin-top: 20px;
+    height: 40%;
+}
+
+
+
+
 .film > .info {
     padding-left: 5em;
     width: 45%;
