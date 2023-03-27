@@ -96,7 +96,7 @@ h1{
     width: inherit;
     height: 300px;
 }
-.section > .sample > .content > a > img:hover {
+.section > .sample > .content > a > img:hover, .section > .genre > .img > img:hover {
     box-shadow: 0px 0px 10px black;
 }
 .section > .sample > .content > audio{
