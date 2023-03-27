@@ -22,16 +22,21 @@ h1{
     width: 90%;
     height: fit-content;
     margin: 3em auto;
+    padding: 10px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 80px 500px;
+    grid-template-rows: 80px 450px;
     gap: 10px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px #0d0d0d;
 }
 .section > .genre {
     position: relative;
-    background-color: #ebebeb;
-    border-radius: 20px;
+    /* background-color: #ebebeb; */
+    /* border-radius: 20px; */
     width: 30%;
+    height: fit-content;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -39,13 +44,13 @@ h1{
 }
 .section > .genre > .img {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: #929292;
     border-radius: 200px;
 }
 .section > .genre > .info {
-    margin-left: 7px;
+    padding: 10px;
 }
 .section > .genre > .info > *{
     margin: 0;
@@ -57,6 +62,7 @@ h1{
     width: inherit;
     height: inherit;
     object-fit: fill;
+    border-radius: 200px;
 }
 
 .section > .sample {
@@ -66,25 +72,33 @@ h1{
     overflow-x: auto;
     justify-content: center;
     gap: 30px;
-    background-color: #ebebeb;
-    border-radius: 20px;
-    padding: 50px;
+    height: fit-content;
+    /* background-color: #ebebeb; */
+    /* border-radius: 20px; */
+    padding: 10px 50px;
 }
 .section > .sample > .content{
     position: relative;
     width: 300px;
-    height: 350px;
+    height: fit-content;
     text-align: left;
 }
 .section > .sample > .content > h3, .section > .sample > .content > p{
     margin: 3px;
 }
-.section > .sample > .content > img{
+.section > .sample > .content > a {
+    position: relative;
+    width: inherit;
+}
+.section > .sample > .content > a > img{
     margin: auto;
     object-fit: cover;
     width: inherit;
     height: 300px;
 }
+.section > .sample > .content > a > img:hover {
+    box-shadow: 0px 0px 10px black;
+}
 .section > .sample > .content > audio{
-    margin-top: 5px;
+    margin: 5px 0 0;
 }

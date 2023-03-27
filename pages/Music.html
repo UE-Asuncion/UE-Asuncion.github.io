@@ -15,38 +15,79 @@
     </div>
     <div class="section">
         <div class="genre">
-            <div class="img"><img src="../imgs/aboutme.png"></div>
+            <a class="img" href="../imgs/jpop-icon.jpg" target="winImage"><img src="../imgs/jpop-icon.jpg"></a>
             <div class="info">
-                <h3>Classical</h3>
+                <h2>J-Pop</h2>
+                <p>Japanese pop music</p>
+            </div>
+        </div>
+        <div class="sample">
+            <div class="content">
+                <a href="../imgs/yorushika-hana-ni-borei.jpg" target="winImage"><img src="../imgs/yorushika-hana-ni-borei.jpg"></a>
+                <h3>Hana ni Borei</h3>
+                <p>Yorushika</p>
+                <audio controls>
+                    <source src="../mp3/yorushika-hana-ni-borei.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="content">
+                <a href="../imgs/SawanoHiroyuki-avid.jpg" target="winImage"><img src="../imgs/SawanoHiroyuki-avid.jpg"></a>
+                <h3>Avid</h3>
+                <p>Sawano Hiroyuki and Mizuki</p>
+                <audio controls>
+                    <source src="../mp3/SawanoHiroyuki-avid.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="content">
+                <a href="../imgs/Chainsawman.jpg" target="winImage"><img src="../imgs/Chainsawman.jpg" style="object-position: center 0;"></a>
+                <h3>Kick Back</h3>
+                <p>Kenshi Yonezu</p>
+                <audio controls class="vol-lower-1">
+                    <source src="../mp3/kenshiyonezu-kick-back.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="genre">
+            <a class="img" href="../imgs/classical-icon.png" target="winImage"><img src="../imgs/classical-icon.png"></a>
+            <div class="info">
+                <h2>Classical</h2>
                 <p>Video Game OST's</p>
             </div>
         </div>
         <div class="sample">
             <div class="content">
-                <img src="../imgs/dark_souls_3_soul_of_cinder.jpg">
+                <a href="../imgs/dark_souls_3_soul_of_cinder.jpg" target="winImage"><img src="../imgs/dark_souls_3_soul_of_cinder.jpg"></a>
                 <h3>Soul of Cinder</h3>
                 <p>Yuka Kitamura</p>
-                <audio controls>
+                <audio controls class="vol-lower-1">
                     <source src="../mp3/dks3-soul-of-cinder.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="content">
-                <img src="../imgs/Dark_Souls.jpg">
-                <h3>Title</h3>
-                <p>Artist</p>
+                <a href="../imgs/bloodborne-ludwig.jpg" target="winImage"><img src="../imgs/bloodborne-ludwig.jpg" style="object-position: 40% center;"></a>
+                <h3>Ludwig The Holy Blade</h3>
+                <p>Nobuyoshi Suzuki</p>
                 <audio controls>
-                    <source src="../mp3/dks3-soul-of-cinder.mp3" type="audio/mpeg">
+                    <source src="../mp3/bloodborne-ludwig.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="content">
-                <img src="../imgs/Dark_Souls.jpg">
-                <h3>Title</h3>
-                <p>Artist</p>
+                <a href="../imgs/majula.jpg" target="winImage"><img src="../imgs/majula.jpg" style="object-position: 30% center;"></a>
+                <h3>Majula</h3>
+                <p>Motoi Sakuraba</p>
                 <audio controls>
-                    <source src="../mp3/dks3-soul-of-cinder.mp3" type="audio/mpeg">
+                    <source src="../mp3/dks2-majula.mp3" type="audio/mpeg">
                 </audio>
             </div>
         </div>
     </div>
 </body>
+<script>
+    const low1 = document.getElementsByClassName('vol-lower-1');
+    for(let i=0;i<low1.length;i++){
+        low1[i].volume = .5;
+    }
+</script>
 </html>
