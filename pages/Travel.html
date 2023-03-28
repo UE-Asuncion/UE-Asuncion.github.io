@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" href="../styles/Asuncion_TravelDesign_CSAD.css">
     <link rel="stylesheet" type="text/css" href="../styles/link.css">
-    <title>Travel</title>
+    <title>Dream Tour</title>
 </head>
 <body>
     <!-- Asuncion, Mark Anthony -->
     <!-- CSAD -->
     <div class="header">
         <a class="home" href="../index.html"><img src="../imgs/home.png" alt="Home"></a>
-        <h1>Travel</h1>
+        <h1>Dream Tour</h1>
+    </div>
+    <div class="collage">
+        <div class="img-contaner" onmouseover="revealDesc()" onmouseleave="hideDesc()">
+        </div>
+        <div class="info-container">
+            <a class="bookmark"href="../imgs/bookmark-icon.png"><img src="../imgs/bookmark-icon.png"></a>
+            <p></p>
+        </div>
     </div>
 </body>
+<script>
+    const infoContainer = document.getElementsByClassName('info-container');
+    const info = infoContainer[0].querySelector('p');
+    function revealDesc(){
+        infoContainer[0].classList.add('desc');
+        info.innerHTML = "Description Goes here";
+    }
+    function hideDesc(){
+        infoContainer[0].classList.remove('desc');
+        info.innerHTML = "";
+    }
+</script>
 </html>
