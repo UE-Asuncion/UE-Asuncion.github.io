@@ -6,7 +6,7 @@ body {
     margin: auto;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: auto 1fr;
 }
 h1{
     font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
@@ -23,74 +23,6 @@ h1{
     margin:auto;
     text-align: left;
 }
-
-/* .section {
-    position: relative;
-    width: 90%;
-    height: fit-content;
-    margin: 3em auto;
-    display: grid;
-    grid-template-columns: 35% 65%;
-    grid-auto-rows: 700px;
-    gap: 20px;
-}
-.section > *{
-    position: relative;
-    padding: 20px;
-    background-color: #ebebeb;
-    border-radius: 20px;
-}
-.section > .cover {
-    overflow-x: auto;
-    height: 500px;
-    box-shadow: 5px -5px #1B262C inset;
-}
-.section > .cover > div{
-    width: fit-content;
-    margin: auto;
-}
-.section > .cover > div > img{
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: 400px;
-    margin: 16px auto auto;
-    object-fit: cover;
-}
-
-
-.section > .clips {
-    overflow-x: auto;
-    box-shadow: -5px -5px #1B262C inset;
-    display: grid;
-    grid-template-rows: 50% 50%;
-
-}
-.section > .clips > div {
-    overflow-x: inherit;
-    position: relative;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-}
-.section > .clips > div > h3 {
-    text-align: left;
-    margin-top: 0;
-    padding-left: 15%;
-}
-.section > .clips > div > video{
-    overflow-y: hidden;
-    display: inline-block;
-    margin: auto;
-    width: 70%;
-    height: auto;
-} */
-/* 
-.film-container {
-    display: flex;
-    flex-wrap: nowrap;
-} */
 
 .types {
     position: relative;

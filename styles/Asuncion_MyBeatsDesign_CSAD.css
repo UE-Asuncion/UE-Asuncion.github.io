@@ -33,9 +33,7 @@ h1{
 }
 .section > .genre {
     position: relative;
-    /* background-color: #ebebeb; */
-    /* border-radius: 20px; */
-    width: 30%;
+    width: 100%;
     height: fit-content;
     padding: 20px;
     display: flex;
@@ -67,15 +65,14 @@ h1{
 
 .section > .sample {
     position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
     gap: 30px;
     height: fit-content;
-    /* background-color: #ebebeb; */
-    /* border-radius: 20px; */
-    padding: 10px 50px;
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
 }
 .section > .sample > .content{
     position: relative;
