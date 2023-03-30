@@ -58,3 +58,17 @@ body {
     transform: translateX(0);
     transition: all .3s ease;
 }
+
+.collage-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    text-align: center;
+    height: 70svh;
+}
+.collage-container > .collage-img {
+    width: auto;
+    height: 100%;
+}

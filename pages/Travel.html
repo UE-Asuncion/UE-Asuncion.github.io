@@ -16,25 +16,29 @@
         <a class="home" href="../index.html"><img src="../imgs/home.png" alt="Home"></a>
         <h1>Dream Tour</h1>
     </div>
-    <div class="collage">
+    <!-- <div class="collage">
         <div class="img-contaner" onmouseover="revealDesc()" onmouseleave="hideDesc()">
         </div>
         <div class="info-container">
             <a class="bookmark"href="../imgs/bookmark-icon.png"><img src="../imgs/bookmark-icon.png"></a>
             <p></p>
         </div>
+    </div> -->
+    <div class="collage-container">
+        <img src="../imgs/dream-tour-collage.png" alt="collage" class="collage-img">
+        <map name="collage-map"></map>
     </div>
 </body>
 <script>
-    const infoContainer = document.getElementsByClassName('info-container');
-    const info = infoContainer[0].querySelector('p');
-    function revealDesc(){
-        infoContainer[0].classList.add('desc');
-        info.innerHTML = "Description Goes here";
-    }
-    function hideDesc(){
-        infoContainer[0].classList.remove('desc');
-        info.innerHTML = "";
-    }
+    // const infoContainer = document.getElementsByClassName('info-container');
+    // const info = infoContainer[0].querySelector('p');
+    // function revealDesc(){
+    //     infoContainer[0].classList.add('desc');
+    //     info.innerHTML = "Description Goes here";
+    // }
+    // function hideDesc(){
+    //     infoContainer[0].classList.remove('desc');
+    //     info.innerHTML = "";
+    // }
 </script>
 </html>
