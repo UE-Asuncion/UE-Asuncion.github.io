@@ -69,9 +69,6 @@ h1{
 .film {
     display: inline;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: white;
     margin: 0;
     width: 100%;
@@ -79,59 +76,76 @@ h1{
     background-color: #1B262C;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
     display: grid;
-    grid-template-rows: 60% 40%;
+    grid-template-columns: 80% 20%;
     overflow: hidden;
 }
-.film-container.film1 > .film:nth-child(1) {
+.film-container.film1 > .film:nth-child(1) > .info{
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/breaking-bad-cover-upscaled.jpeg'); 
 }
-.film-container.film1 > .film:nth-child(2) {
+.film-container.film1 > .film:nth-child(1) > .info > a > img {
+    width: 40%;
+    height: auto;
+}
+.film-container.film1 > .film:nth-child(2) > .info{
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/Bleach-TYBW-upscaled.jpeg'); 
 }
-.film-container.film1 > .film:nth-child(3) {
+.film-container.film1 > .film:nth-child(2) > .info > a > img {
+    width: 40%;
+    height: auto;
+}
+.film-container.film1 > .film:nth-child(3) > .info{
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/soul-eater-cover.jpg');
     background-position: center top 20%;
 }
 .film-container.film1 > .film:nth-child(3) > .info > a > img {
-    margin-top: 10px;
-    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 30px;
+    width: 50%;
+    height: auto;
 }
 
-.film-container.film2 > .film:nth-child(1) {
+.film-container.film2 > .film:nth-child(1) > .info {
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/pirates-caribbean-cover.jpg');
 }
 .film-container.film2 > .film:nth-child(1) > .info > a > img{
     margin-top: 20px;
-    height: 40%;
+    width: 80%;
+    height: auto;
 }
-.film-container.film2 > .film:nth-child(2) {
+.film-container.film2 > .film:nth-child(2) > .info {
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/silent-voice-cover.jpg');
 }
-.film-container.film2 > .film:nth-child(3) {
+.film-container.film2 > .film:nth-child(2) > .info > h1 {
+    margin-top: 40px;
+    font-size: 6em;
+}
+.film-container.film2 > .film:nth-child(3) > .info {
     background-image: linear-gradient(to right,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), linear-gradient(to left,rgba(27, 38, 44,.7) 20%, rgba(1,1,1, 0)), url('../imgs/spirited-away-cover.jpg');
 }
 .film-container.film2 > .film:nth-child(3) > .info > a > img{
-    height: 60%;
     margin-bottom: 20px;
 }
 
 .film > .info {
     padding-left: 5em;
-    width: 45%;
+    padding-right: 2em;
+    width: 1fr;
     height: 100%;
     font-family: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .film > .info > a {
     position: relative;
     width: fit-content;
-    height: 180px;
+    height: auto;
 }
 .film > .info > a > img {
     vertical-align: top;
     object-fit: contain;
-    width: auto;
-    min-height: 30%;
-    height: 70%;
+    width: 60%;
+    height: auto;
 }
 .film > .info > *{
     margin: 0 0 10px;
@@ -143,24 +157,26 @@ h1{
 }
 .film > .info > p {
     text-align: justify;
-    height: 100px;
+    width: 50%;
     overflow-y: auto;
 }
 .film > .clips {
     position: relative;
     overflow-x: auto;
-    width: 87%;
+    width: 95%;
+    height: 100%;
     margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: min-content;
+    gap: 5px;
 }
 .film > .clips > video {
     background-color: black;
     object-fit: contain;
     vertical-align: center;
-    width: 250px;
-    height: 140px;
+    width: 100%;
+    height: 10em;
 }
 
 .film > .next-button, .film > .prev-button {
@@ -171,21 +187,25 @@ h1{
     padding: 10px;
     top: 40%;
 }
+
+.film > .next-button, .film > .prev-button {
+    opacity: .5;
+}
 .film > .next-button {
-    right: 20px;
+    right: 20%;
 }
 .film > .prev-button {
-    left: 20px;
+    left: 5px;
     transform: rotate(180deg);
 }
 .film > .next-button:hover, .film > .prev-button:hover {
+    opacity: 1;
     background-color: #dddddd0d;
-    transition: .3s ease;
+    transition: all .3s ease;
 }
 .film > .next-button > img, .film > .prev-button > img {
     position: relative;
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    padding-left: 3px;
 }
