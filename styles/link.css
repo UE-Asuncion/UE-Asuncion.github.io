@@ -1,6 +1,8 @@
 div.header > a.home {
     float: left;
     margin-left: 2em;
+    height: 40px;
+    width: 40px;
 }
 div.header > a.home::after {
     content: "";
@@ -9,10 +11,10 @@ div.header > a.home::after {
 div.header > a.home > img {
     width: auto;
     height: 40px;
-    border-radius: 100px;
     transition: .3s ease;
 }
-div.header > a.home:hover > img{
+div.header > a.home:hover{
+    border-radius: 100px;
     background-color: #cbcbcb36;
     transition: .3s ease-in;
 }
