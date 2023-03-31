@@ -96,7 +96,7 @@ h1 {
     object-fit: cover;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .reasons-image-portrait {

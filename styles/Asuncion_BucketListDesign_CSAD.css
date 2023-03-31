@@ -1,0 +1,19 @@
+body {
+    margin: auto;
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
+}
+.header {
+    position: relative;
+    font-family: "Roboto Slab",Georgia, 'Times New Roman', serif;
+    width: auto;
+    margin: 0 0 2em;
+    padding: 1em 2em;
+    background-color: #1B262C;
+    color: white;
+}
+
+.header > h1 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
