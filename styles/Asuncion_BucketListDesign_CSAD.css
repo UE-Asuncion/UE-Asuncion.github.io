@@ -15,8 +15,8 @@ h1 {
 }
 
 .header > h1 {
-    width: 80%;
-    text-align: center;
+    width: 85%;
+    text-align: left;
     margin: auto;
 }
 
@@ -24,9 +24,10 @@ h1 {
     display: grid;
     width: fit-content;
     margin: auto;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 300px 300px 300px;
     grid-auto-rows: 400px;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .bucketlist-container > .bucketlist-card {
@@ -44,6 +45,7 @@ h1 {
     height: 100%;
 }
 .bucketlist-card > a > img {
+    object-fit: cover;
     width: inherit;
     height: inherit;
     border-top-left-radius: 10px;
@@ -54,8 +56,12 @@ h1 {
 }
 .bucketlist-card > div {
     padding: 20px;
+    overflow: auto;
 }
 .bucketlist-card > div > h1 {
     font-size: 100%;
     margin-top: 0;
+}
+.bucketlist-card > div > p {
+    margin-bottom: 0;
 }
