@@ -21,25 +21,34 @@
             <img src="../imgs/dream-tour-collage.png" alt="collage" class="collage-img" usemap="#collage-map">
         </div>
         <div class="desc">
-            <p>asdsad</p>
-            <!-- <img src="../imgs/bookmark-icon.png" alt="bookmark"> -->
+            <p></p>
+            <img src="../imgs/bookmark-icon.png" alt="bookmark">
         </div>
     </div>
     <map name="collage-map">
-        <area alt="mt. fuji" title="mt. fuji" href="travel/japan-fuji.html" coords="10,0,178,192" shape="rect" onmouseover="revealDesc()" onmouseleave="hideDesc()">
-        <area alt="mont saint michel" title="mont saint michel" href="travel/france-mont-saint-michel.html" coords="188,-2,370,190" shape="rect">
-        <area alt="city of bath" title="city of bath" href="travel/england-city-of-bath.html" coords="379,-1,490,191" shape="rect">
-        <area alt="imperial palace" title="imperial palace" href="travel/japan-imperial-palace.html" coords="9,200,177,382" shape="rect">
-        <area alt="windsor castle" title="windsor castle" href="travel/england-windsor-castle.html" coords="189,201,314,383" shape="rect">
-        <area alt="musee du louvre" title="musee du louvre" href="travel/france-musee-du-louvre.html" coords="321,199,490,382" shape="rect">
+        <area alt="mt. fuji" title="mt. fuji" href="travel/japan-fuji.html" coords="10,0,178,192" shape="rect" onmouseover="revealDesc('fuji')" onmouseleave="hideDesc()">
+        <area alt="imperial palace" title="imperial palace" href="travel/japan-imperial-palace.html" coords="9,200,177,382" shape="rect" onmouseover="revealDesc('imperial-palace')" onmouseleave="hideDesc()">
+        <area alt="mont saint michel" title="mont saint michel" href="travel/france-mont-saint-michel.html" coords="188,-2,370,190" shape="rect" onmouseover="revealDesc('mont-saint-michel')" onmouseleave="hideDesc()">
+        <area alt="city of bath" title="city of bath" href="travel/england-city-of-bath.html" coords="379,-1,490,191" shape="rect" onmouseover="revealDesc('city-of-bath')" onmouseleave="hideDesc()">
+        <area alt="windsor castle" title="windsor castle" href="travel/england-windsor-castle.html" coords="189,201,314,383" shape="rect"
+        onmouseover="revealDesc('windsor-castle')" onmouseleave="hideDesc()">
+        <area alt="musee du louvre" title="musee du louvre" href="travel/france-musee-du-louvre.html" coords="321,199,490,382" shape="rect" onmouseover="revealDesc('musee-du-louvre')" onmouseleave="hideDesc()">
     </map>
 </body>
 <script>
+    const descriptions = new Map([
+        ['fuji','<b>Mt. Fuji</b><br>Location: <b>Honshū,Japan</b><br><br> <span>Mt. Fuji highest mountain in Japan, with a summit elevation of 3,776.24 m (12,389 ft 3 in). It is the second-highest volcano located on an island in Asia (after Mount Kerinci on the island of Sumatra), and seventh-highest peak of an island on Earth. Mount Fuji is an active stratovolcano that last erupted from 1707 to 1708.</span>'],
+        ['imperial-palace','<b>Imperial Palace</b><br>Location: <b>Chiyoda district,Chiyoda ward,Tokyo</b><br><br><span>Imperial palace is the main residence of the Emperor of Japan. It is built on the site of the old Edo Castle. The total area including the gardens is 1.15 square kilometres (0.44 sq mi).[1] During the height of the 1980s Japanese property bubble, the palace grounds were valued by some to be more than the value of all of the real estate in the U.S. state of California.</span>'],
+        ['mont-saint-michel','<b>Mont Saint Michel</b><br>Location: <b> Normandy, France</b><br><br><span>The island lies approximately one km (one-half nautical mile) off the country\'s north-western coast, at the mouth of the Couesnon River near Avranches and is 7 hectares (17 acres) in area. The mainland part of the commune is 393 hectares (971 acres) in area so that the total surface of the commune is 400 hectares (990 acres). As of 2019, the island had a population of 29.</span>'],
+        ['city-of-bath','<b>City of Bath</b><br>Location: <b>Somerset, England</b><br><br><span> known for and named after its Roman-built baths. At the 2021 Census, the population was 101,557. Bath is in the valley of the River Avon, 97 miles (156 km) west of London and 11 miles (18 km) southeast of Bristol. The city became a World Heritage Site in 1987.</span>'],
+        ['windsor-castle','<b>Windsor Castle</b><br>Location: <b>Windsor, United Kingdom</b><br><br><span>Windsor Castle is the oldest and largest occupied castle in the world. It is open to visitors throughout the year. Founded by William the Conqueror in the 11th century, it has since been the home of 40 monarchs. You can sign up to our email updates to hear the latest news about the Castle and events taking place. </span>'],
+        ['musee-du-louvre','<b>Musee du Louvre</b><br>Location: <b>Louvre Museum, France</b><br><br><span> is the World\'s most-visited museum, and a historic landmark in Paris, France. It is the home of some of the best-known works of art, including the Mona Lisa and the Venus de Milo.</span>'],
+    ]);
     const infoContainer = document.getElementsByClassName('desc');
     const info = infoContainer[0].querySelector('p');
-    function revealDesc(){
+    function revealDesc(id){
         infoContainer[0].classList.add('desc-show');
-        info.innerHTML = "Description Goes here";
+        info.innerHTML = descriptions.get(id);
     }
     function hideDesc(){
         infoContainer[0].classList.remove('desc-show');

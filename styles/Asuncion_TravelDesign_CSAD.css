@@ -25,7 +25,7 @@ body {
 .image-map {
     position: relative;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
     grid-auto-rows: auto;
     justify-items: right;
 }
@@ -56,8 +56,14 @@ body {
     transform-origin: 100% 50%;
     transition: all .3s ease;
 }
-
+.image-map > .desc > p > span{
+    display:inline-block;
+    text-align: justify;
+}
 .image-map > .desc > img {
+    position: absolute;
+    top: 0;
+    right: 5%;
     width: 40px;
 }
 
