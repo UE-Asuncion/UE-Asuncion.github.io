@@ -16,29 +16,34 @@
         <a class="home" href="../index.html"><img src="../imgs/home.png" alt="Home"></a>
         <h1>Dream Tour</h1>
     </div>
-    <div class="collage-container">
-        <img src="../imgs/dream-tour-collage.png" alt="collage" class="collage-img" usemap="#collage-map">
-        <map name="collage-map">
-            <area alt="mt. fuji" title="mt. fuji" href="pages/travel/japan-fuji.html" coords="10,0,178,192" shape="rect">
-            <area alt="mont saint michel" title="mont saint michel" href="pages/travel/france-mont-saint-michel.html" coords="188,-2,370,190" shape="rect">
-            <area alt="city of bath" title="city of bath" href="pages/travel/england-city-of-bath.html" coords="379,-1,490,191" shape="rect">
-            <area alt="imperial palace" title="imperial palace" href="pages/travel/japan-imperial-palace.html" coords="9,200,177,382" shape="rect">
-            <area alt="windsor castle" title="windsor castle" href="pages/travel/england-windsor-castle.html" coords="189,201,314,383" shape="rect">
-            <area alt="musee du louvre" title="musee du louvre" href="pages/travel/france-musee-du-louvre.html" coords="321,199,490,382" shape="rect">
-          </map>
-          
+    <div class="image-map">
+        <div class="collage-container">
+            <img src="../imgs/dream-tour-collage.png" alt="collage" class="collage-img" usemap="#collage-map">
+        </div>
+        <div class="desc">
+            <p>asdsad</p>
+            <!-- <img src="../imgs/bookmark-icon.png" alt="bookmark"> -->
+        </div>
     </div>
+    <map name="collage-map">
+        <area alt="mt. fuji" title="mt. fuji" href="travel/japan-fuji.html" coords="10,0,178,192" shape="rect" onmouseover="revealDesc()" onmouseleave="hideDesc()">
+        <area alt="mont saint michel" title="mont saint michel" href="travel/france-mont-saint-michel.html" coords="188,-2,370,190" shape="rect">
+        <area alt="city of bath" title="city of bath" href="travel/england-city-of-bath.html" coords="379,-1,490,191" shape="rect">
+        <area alt="imperial palace" title="imperial palace" href="travel/japan-imperial-palace.html" coords="9,200,177,382" shape="rect">
+        <area alt="windsor castle" title="windsor castle" href="travel/england-windsor-castle.html" coords="189,201,314,383" shape="rect">
+        <area alt="musee du louvre" title="musee du louvre" href="travel/france-musee-du-louvre.html" coords="321,199,490,382" shape="rect">
+    </map>
 </body>
 <script>
-    // const infoContainer = document.getElementsByClassName('info-container');
-    // const info = infoContainer[0].querySelector('p');
-    // function revealDesc(){
-    //     infoContainer[0].classList.add('desc');
-    //     info.innerHTML = "Description Goes here";
-    // }
-    // function hideDesc(){
-    //     infoContainer[0].classList.remove('desc');
-    //     info.innerHTML = "";
-    // }
+    const infoContainer = document.getElementsByClassName('desc');
+    const info = infoContainer[0].querySelector('p');
+    function revealDesc(){
+        infoContainer[0].classList.add('desc-show');
+        info.innerHTML = "Description Goes here";
+    }
+    function hideDesc(){
+        infoContainer[0].classList.remove('desc-show');
+        info.innerHTML = "";
+    }
 </script>
 </html>

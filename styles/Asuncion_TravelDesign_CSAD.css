@@ -1,3 +1,6 @@
+/* html, body {
+    width: 100%;
+} */
 body {
     margin: auto;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
@@ -19,57 +22,46 @@ body {
     margin: auto;
 }
 
-.collage {
+.image-map {
     position: relative;
     display: grid;
-    width: 90%;
-    margin: auto 0 auto auto;
-    height: 75svh;
     grid-template-columns: 60% 40%;
-    gap: 20px;
-    /* overflow: hidden; */
+    grid-auto-rows: auto;
+    justify-items: right;
 }
-
-.collage > * {
-    position: relative;
-    padding: 30px;
-    border-radius: 20px;
+.image-map > *{
     background-color: #ebebeb;
-}
-.collage > .info-container {
-    transform: translateX(100%);
-    transition: all .3s ease;
-    padding-top: 60px;
-    overflow: hidden;
-}
-.collage > .info-container > .bookmark {
-    position: absolute;
-    top: 0;
-    right: 3em;
-    width: 50px;
-    height: auto;
-}
-.collage > .info-container > .bookmark > img {
-    width: inherit;
-    height: inherit;
-    
-}
-
-.collage > .desc {
-    transform: translateX(0);
-    transition: all .3s ease;
+    border-radius: 20px;
 }
 
 .collage-container {
-    width: 50%;
-    margin: auto;
     padding: 20px;
-    border-radius: 20px;
-    background-color: #ebebeb;
     text-align: center;
+    width: fit-content;
     height: fit-content;
 }
+
 .collage-container > .collage-img {
     width: 500px;
     height: 400px;
+}
+
+.image-map > .desc {
+    position: relative;
+    padding: 30px;
+    width: 80%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition: all .3s ease;
+}
+
+.image-map > .desc > img {
+    width: 40px;
+}
+
+.desc.desc-show {
+    transition: all .3s ease;
+    transform: scaleX(1);
 }

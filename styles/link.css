@@ -4,14 +4,9 @@ div.header > a.home {
     height: 40px;
     width: 40px;
 }
-div.header > a.home::after {
-    content: "";
-    clear: left;
-}
 div.header > a.home > img {
     width: auto;
     height: 40px;
-    transition: .3s ease;
 }
 div.header > a.home:hover{
     border-radius: 100px;
