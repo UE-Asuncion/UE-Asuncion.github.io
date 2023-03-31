@@ -5,6 +5,7 @@ body {
     margin: auto;
     font-family: "Roboto",Verdana, Tahoma, sans-serif;
     overflow-x: hidden;
+    background-color: #1B262C;
 }
 .header {
     position: relative;
@@ -119,6 +120,7 @@ h1 {
     height: fit-content;
     background-color: #1B262C;
     border-radius: 20px;
+    padding: 30px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
