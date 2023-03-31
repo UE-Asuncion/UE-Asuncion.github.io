@@ -128,7 +128,7 @@ h1 {
     z-index: 5;
     color: white;
     padding: 30px;
-    height: fit-content;
+    height: auto;
     width: 70%;
     margin: auto;
     padding: 2em 7em;
@@ -149,7 +149,6 @@ h1 {
 } */
 .reasons-container > .section-container > .section > h1 {
     text-align: left;
-
 }
 .reasons-container > .section-container > .section > p{
     /* text-indent: 5em; */
